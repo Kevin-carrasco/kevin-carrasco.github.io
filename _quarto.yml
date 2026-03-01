@@ -3,90 +3,49 @@ project:
   output-dir: docs
 
 # Meta
-description-meta: "Dr. Gang He is an energy scholar, researcher, and teacher. He studies and teaches energy systems, energy and climate policy, and clean energy transition. Key words: Energy systems analysis, energy and climate policy, clean energy transition, decarbonization, and carbon neutrality"
-author-meta: "Gang He"
+description-meta: "Kevin Carrasco - Sociólogo y Magíster en Ciencias sociales"
+author-meta: "Kevin Carrasco"
 
 website:
-  title: "Dr. Gang He"
-  image: "/files/gang-he-profile.jpeg"
-  description: "Dr. Gang He is an energy scholar, researcher, and teacher. He studies and teaches energy systems, energy and climate policy, and clean energy transition."
+  title: "Kevin Carrasco"
+  image: "/files/profile/kevin-carrasco.jpg"
+  description: "Kevin Carrasco es un sociólogo y magíster en Ciencias sociales. "
  
   navbar:
-    background: light
+    background: dark
 
     left:
 #      - text: Home
-#        href: index.qmd
-      - text: About
-        menu:
-          - text: News
-            href: posts.qmd#category=news
-          - text: Events
-            href: posts.qmd#category=event
-          - text: Now
-            href: now.qmd       
-          - text: Contact
-            href: contact.qmd             
-      - text: Research
-        menu:
-          - text: List of Publications
-            href: publications.qmd
-          - text: Selected Papers
-            href: posts.qmd#category=paper
-          - text: Commentary
-            href: posts.qmd#category=commentary
-          - text: Recognition
-            href: posts.qmd#category=recognition  
-          - text: Grants
-            href: https://deeppolicylab.github.io/projects.html
-            target: _blank                                  
-      - text: Teaching
+#        href: index.qmd   
+      - text: Investigación  
+        href: publications.qmd                             
+      - text: Docencia
         href: teaching.qmd
-      - text: Outreach
-        menu:
-        - text: Policy Engagement
-          href: posts.qmd#category=outreach 
-        - text: Policy Citations
-          href: notable-policy-citations.qmd          
-        - text: Presentations
-          href: posts.qmd#category=presentation       
-        - text: Testimony
-          href: posts.qmd#category=testimony
-        - text: Media
-          href: media.qmd        
-        - text: Notes
-          href: notes.qmd          
-      - text: Deep Policy Lab
-        href: https://deeppolicylab.github.io/
-        target: _blank
-      - text: 中文
-        href: cn.qmd
+
 
     right: 
       - text: "**CV**"
-        href: files/Gang-He-CV.pdf
+        href: files/cv-esp.pdf
         target: _blank 
       - icon: github
-        href: https://github.com/drganghe
+        href: https://github.com/kevin-carrasco
         target: _blank
-      - text: "{{< fa brands bluesky >}}"
-        href: https://bsky.app/profile/hegang.bsky.social
-        target: _blank
-#      - icon: twitter-x 
-#        href: https://twitter.com/DrGangHe
-#        target: _blank        
-      - icon: rss
-        href: posts.xml
-        target: _blank
+#      - text: "{{< fa brands bluesky >}}"
+#        href: https://bsky.app/profile/hegang.bsky.social
+#        target: _blank
+      - icon: twitter-x 
+        href: https://twitter.com/kevincarrascoq1
+        target: _blank        
+
   
   page-navigation: true
   
   page-footer: 
-    center: "[Gang He](http://drganghe.github.io) &copy; <script>document.write(new Date().getFullYear())</script>"
-    # left: "[Gang He](http://drganghe.github.io) &copy; <script>document.write(new Date().getFullYear())</script>" 
-    # right:  
-    #   - icon: github
-    #     href: https://github.com/drganghe/drganghe.github.io
+    center: "[Kevin Carrasco](http://kevin-carrasco.github.io) &copy; <script>document.write(new Date().getFullYear())</script>"
+    # left: "[Kevin Carrasco](http://kevin-carrasco.github.io) &copy; <script>document.write(new Date().getFullYear())</script>" 
+    right:  
+       - icon: github
+         href: https://github.com/kevin-carrasco/kevin-carrasco.github.io
     #     target: _blank
     #   - text: "{{< fa brands bluesky >}}" 
     #     href: https://bsky.app/profile/hegang.bsky.social
@@ -103,7 +62,7 @@ website:
 
   draft-mode: unlinked
   
-  repo-url: https://github.com/drganghe/drganghe.github.io
+  repo-url: https://github.com/kevin-carrasco/kevin-carrasco.github.io
 #  repo-actions: [edit, issue, source]
   
   open-graph: true
@@ -111,11 +70,8 @@ website:
   twitter-card: true 
 #  card-style: summary      
   
-  site-url: "https://drganghe.github.io"
+  site-url: "https://kevin-carrasco.github.io"
   
-  google-analytics:
-    tracking-id: "G-G4DYZHP5J7"  # Please delete or replace with your own tracking ID
-    anonymize-ip: true 
 
 bibliography: references.bib
 
