@@ -45,7 +45,10 @@ Actualmente soy Investigador predoctoral en el Nucleo milenio sobre evolución d
 
 Anteriormente fui Asistente de investigación de la línea «Interacciones Grupales e Individuales» de COES, Coordinador del Laboratorio de Investigación Social Abierta (LISA-COES), asistente de investigación del observatorio de cohesión social (ocs-coes), asistente de Investigación del proyecto FONDECYT "Educación y Meritocracia: Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile" y del proyecto FONDECYT "El proceso de trabajo en la 'Economía GIG': El caso de las plataformas de reparto en Chile y Argentina".
 
-Nací y crecí en [Champa](files/profile/champa.jpg), Paine. Actualmente vivo en Santiago.
+Nací y crecí en [Champa](files/profile/champa.jpg), Paine. Actualmente vivo en Santiago. Me gusta andar en bici, la música e ir a conciertos. Acá mi playlist de Spotify:
+
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2jXSJ6D55LUNqtL6YkeZpr?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
 :::
 
 ## Últimos papers
