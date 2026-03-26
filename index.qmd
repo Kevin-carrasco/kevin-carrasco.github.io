@@ -39,7 +39,7 @@ about:
 
 :::{#hero-heading}
 
-Mi nombre es Kevin Carrasco Quintanilla y soy Sociólogo y magíster en Ciencias Sociales de la Universidad de Chile. Mis intereses de investigación incluyen desigualdad, justicia distributiva, educación ciudadana, ciencia abierta y métodos cuantitativos de investigación social.
+Mi nombre es Kevin Carrasco Quintanilla y soy Sociólogo y magíster en Ciencias Sociales de la Universidad de Chile. Mis intereses de investigación incluyen desigualdad, justicia distributiva, educación ciudadana, ciencia abierta, métodos cuantitativos de investigación social y diseños de encuesta.
 
 Actualmente soy Investigador predoctoral en el Nucleo milenio sobre evolución del trabajo [(M-NEW)](https://www.m-new.org/) y profesor de la cátedra “Métodos Estadísticos para las Ciencias Sociales III” de la Universidad Andrés Bello y del curso electivo "R para el análisis de datos sociales" de la Universidad Alberto Hurtado.
 
