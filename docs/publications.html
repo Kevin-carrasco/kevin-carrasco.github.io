@@ -111,33 +111,87 @@ https://badge.dimensions.ai/
 
 /* Oculta la barra superior */
 
-.goog-te-banner-frame.skiptranslate { display: none !important; }
+.goog-te-banner-frame.skiptranslate { 
 
-body { top: 0 !important; }
+  display: none !important; 
+
+}
+
+body { 
+
+  top: 0 !important; 
+
+}
 
 
 
 /* Evita saltos por iframes */
 
-html body .skiptranslate > iframe { visibility: hidden !important; }
+html body .skiptranslate > iframe { 
+
+  visibility: hidden !important; 
+
+}
 
 
 
 /* Contenedor del widget: lo queremos en DOM pero discreto */
 
-.gtrans-slot { width: 0; height: 0; overflow: hidden; }
+.gtrans-slot { 
+
+  width: 0; 
+
+  height: 0; 
+
+  overflow: hidden; 
+
+}
 
 
 
 /* Botón-bandera */
 
-.nav-item.gtrans-flag { display: flex; align-items: center; }
+.nav-item.gtrans-flag { 
+
+  display: flex; 
+
+  align-items: center; 
+
+}
+
+
 
 .nav-item.gtrans-flag a {
 
-  text-decoration: none; font-size: 1.1rem; line-height: 1;
+  text-decoration: none;
 
-  padding: 0 .4rem; cursor: pointer;
+  line-height: 1;
+
+  padding: 0 .4rem;
+
+  cursor: pointer;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+
+
+/* Imagen de bandera */
+
+.nav-item.gtrans-flag img {
+
+  width: 1.25rem;
+
+  height: auto;
+
+  display: block;
+
+  border-radius: 2px;
 
 }
 
@@ -146,6 +200,34 @@ html body .skiptranslate > iframe { visibility: hidden !important; }
 
 
 <script>
+
+// -------- Configuración de banderas --------
+
+const FLAG_ASSETS = {
+
+  es: {
+
+    src: "/files/icons/flag-cl.svg",
+
+    alt: "Español (Chile)",
+
+    title: "Ver en español (Chile)"
+
+  },
+
+  en: {
+
+    src: "/files/icons/flag-gb.svg",
+
+    alt: "English (UK)",
+
+    title: "View in English"
+
+  }
+
+};
+
+
 
 // -------- Utilidades --------
 
@@ -163,6 +245,8 @@ function findRightNav() {
 
 }
 
+
+
 function currentLangFromCookie() {
 
   const m = document.cookie.match(/(?:^|;)\s*googtrans=([^;]+)/);
@@ -175,21 +259,39 @@ function currentLangFromCookie() {
 
 }
 
-function updateFlag() {
+
+
+function renderFlagButton(targetLang) {
 
   const a = document.getElementById('gtrans-flag-toggle');
 
   if (!a) return;
 
-  const lang = currentLangFromCookie();
 
-  // 🔽 Aquí cambiamos la bandera
 
-  a.textContent = (lang === 'en') ? '🇨🇱' : '🇬🇧';
+  const flag = FLAG_ASSETS[targetLang];
 
-  a.title = (lang === 'en') ? 'Ver en español (Chile)' : 'View in English';
+  a.innerHTML = `<img src="${flag.src}" alt="${flag.alt}" aria-hidden="true">`;
 
-  a.setAttribute('aria-label', a.title);
+  a.title = flag.title;
+
+  a.setAttribute('aria-label', flag.title);
+
+}
+
+
+
+function updateFlag() {
+
+  const current = currentLangFromCookie();
+
+
+
+  // Muestra la bandera del idioma al que cambiarás al hacer click
+
+  const next = (current === 'en') ? 'es' : 'en';
+
+  renderFlagButton(next);
 
 }
 
@@ -199,19 +301,27 @@ function setCookieAndReload(lang) {
 
   const val = `/auto/${lang}`;
 
-  const d = new Date(); d.setFullYear(d.getFullYear() + 1);
+  const d = new Date();
+
+  d.setFullYear(d.getFullYear() + 1);
+
+
 
   const base = `googtrans=${val}; expires=${d.toUTCString()}; path=/`;
 
   const host = location.hostname;
 
-  const root = '.' + host.replace(/^www\./,'');
+  const root = '.' + host.replace(/^www\./, '');
+
+
 
   document.cookie = base;
 
   document.cookie = `${base}; domain=${host}`;
 
   document.cookie = `${base}; domain=${root}`;
+
+
 
   location.reload();
 
@@ -229,7 +339,7 @@ function ensureNavItems() {
 
 
 
-  // Bandera
+  // Botón de bandera
 
   if (!document.getElementById('gtrans-flag-toggle')) {
 
@@ -237,7 +347,7 @@ function ensureNavItems() {
 
     li.className = 'nav-item gtrans-flag';
 
-    li.innerHTML = `<a id="gtrans-flag-toggle" title="Cambiar idioma">🌐</a>`;
+    li.innerHTML = `<a id="gtrans-flag-toggle" title="Cambiar idioma"></a>`;
 
     right.appendChild(li);
 
@@ -259,6 +369,10 @@ function ensureNavItems() {
 
   }
 
+
+
+  updateFlag();
+
   return true;
 
 }
@@ -273,7 +387,7 @@ function changeViaCombo(lang) {
 
   if (!combo) return false;
 
-  // IMPORTANTE: Google espera códigos en minúsculas tipo 'en'/'es'
+
 
   combo.value = lang;
 
@@ -291,15 +405,13 @@ function changeViaCombo(lang) {
 
 function googleTranslateElementInit() {
 
-  // Montamos el widget (necesario para que Google traduzca)
-
   new google.translate.TranslateElement(
 
     {
 
       pageLanguage: 'es',
 
-      includedLanguages: 'es,en',   // permite ir y volver sin recarga
+      includedLanguages: 'es,en',
 
       layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
 
@@ -312,8 +424,6 @@ function googleTranslateElementInit() {
   );
 
 
-
-  // Una vez listo el DOM, conectamos eventos
 
   const tryWire = () => {
 
@@ -337,7 +447,9 @@ function googleTranslateElementInit() {
 
         const next = (current === 'en') ? 'es' : 'en';
 
-        // 1) Intento directo con combo
+
+
+        // 1) Intento directo con el combo
 
         if (!changeViaCombo(next)) {
 
@@ -354,8 +466,6 @@ function googleTranslateElementInit() {
   };
 
 
-
-  // Espera a que Google inyecte el combo y conéctalo
 
   let tries = 0;
 
@@ -383,7 +493,7 @@ window.googleTranslateElementInit = googleTranslateElementInit;
 
 
 
-// Primer pintado de navbar (por si el callback tarda)
+// Primer pintado de navbar
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -400,7 +510,6 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- Carga la librería con callback -->
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 
 
 <link rel="stylesheet" href="styles.css">

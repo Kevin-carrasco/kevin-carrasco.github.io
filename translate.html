@@ -1,23 +1,64 @@
 <style>
 /* Oculta la barra superior */
-.goog-te-banner-frame.skiptranslate { display: none !important; }
-body { top: 0 !important; }
+.goog-te-banner-frame.skiptranslate { 
+  display: none !important; 
+}
+body { 
+  top: 0 !important; 
+}
 
 /* Evita saltos por iframes */
-html body .skiptranslate > iframe { visibility: hidden !important; }
+html body .skiptranslate > iframe { 
+  visibility: hidden !important; 
+}
 
 /* Contenedor del widget: lo queremos en DOM pero discreto */
-.gtrans-slot { width: 0; height: 0; overflow: hidden; }
+.gtrans-slot { 
+  width: 0; 
+  height: 0; 
+  overflow: hidden; 
+}
 
 /* Botón-bandera */
-.nav-item.gtrans-flag { display: flex; align-items: center; }
+.nav-item.gtrans-flag { 
+  display: flex; 
+  align-items: center; 
+}
+
 .nav-item.gtrans-flag a {
-  text-decoration: none; font-size: 1.1rem; line-height: 1;
-  padding: 0 .4rem; cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
+  padding: 0 .4rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagen de bandera */
+.nav-item.gtrans-flag img {
+  width: 1.25rem;
+  height: auto;
+  display: block;
+  border-radius: 2px;
 }
 </style>
 
 <script>
+// -------- Configuración de banderas --------
+const FLAG_ASSETS = {
+  es: {
+    src: "/files/icons/flag-cl.svg",
+    alt: "Español (Chile)",
+    title: "Ver en español (Chile)"
+  },
+  en: {
+    src: "/files/icons/flag-gb.svg",
+    alt: "English (UK)",
+    title: "View in English"
+  }
+};
+
 // -------- Utilidades --------
 function findRightNav() {
   const targets = document.querySelectorAll(
@@ -26,31 +67,45 @@ function findRightNav() {
   for (const el of targets) if (el) return el;
   return null;
 }
+
 function currentLangFromCookie() {
   const m = document.cookie.match(/(?:^|;)\s*googtrans=([^;]+)/);
   if (!m) return 'es';
   const v = decodeURIComponent(m[1]).split('/');
   return v[v.length - 1] || 'es';
 }
-function updateFlag() {
+
+function renderFlagButton(targetLang) {
   const a = document.getElementById('gtrans-flag-toggle');
   if (!a) return;
-  const lang = currentLangFromCookie();
-  // 🔽 Aquí cambiamos la bandera
-  a.textContent = (lang === 'en') ? '🇨🇱' : '🇬🇧';
-  a.title = (lang === 'en') ? 'Ver en español (Chile)' : 'View in English';
-  a.setAttribute('aria-label', a.title);
+
+  const flag = FLAG_ASSETS[targetLang];
+  a.innerHTML = `<img src="${flag.src}" alt="${flag.alt}" aria-hidden="true">`;
+  a.title = flag.title;
+  a.setAttribute('aria-label', flag.title);
+}
+
+function updateFlag() {
+  const current = currentLangFromCookie();
+
+  // Muestra la bandera del idioma al que cambiarás al hacer click
+  const next = (current === 'en') ? 'es' : 'en';
+  renderFlagButton(next);
 }
 
 function setCookieAndReload(lang) {
   const val = `/auto/${lang}`;
-  const d = new Date(); d.setFullYear(d.getFullYear() + 1);
+  const d = new Date();
+  d.setFullYear(d.getFullYear() + 1);
+
   const base = `googtrans=${val}; expires=${d.toUTCString()}; path=/`;
   const host = location.hostname;
-  const root = '.' + host.replace(/^www\./,'');
+  const root = '.' + host.replace(/^www\./, '');
+
   document.cookie = base;
   document.cookie = `${base}; domain=${host}`;
   document.cookie = `${base}; domain=${root}`;
+
   location.reload();
 }
 
@@ -59,11 +114,11 @@ function ensureNavItems() {
   const right = findRightNav();
   if (!right) return false;
 
-  // Bandera
+  // Botón de bandera
   if (!document.getElementById('gtrans-flag-toggle')) {
     const li = document.createElement('li');
     li.className = 'nav-item gtrans-flag';
-    li.innerHTML = `<a id="gtrans-flag-toggle" title="Cambiar idioma">🌐</a>`;
+    li.innerHTML = `<a id="gtrans-flag-toggle" title="Cambiar idioma"></a>`;
     right.appendChild(li);
   }
 
@@ -74,6 +129,8 @@ function ensureNavItems() {
     li2.innerHTML = `<div id="google_translate_element" class="gtrans-slot"></div>`;
     right.appendChild(li2);
   }
+
+  updateFlag();
   return true;
 }
 
@@ -81,7 +138,7 @@ function ensureNavItems() {
 function changeViaCombo(lang) {
   const combo = document.querySelector('select.goog-te-combo');
   if (!combo) return false;
-  // IMPORTANTE: Google espera códigos en minúsculas tipo 'en'/'es'
+
   combo.value = lang;
   combo.dispatchEvent(new Event('change'));
   setTimeout(updateFlag, 700);
@@ -90,18 +147,16 @@ function changeViaCombo(lang) {
 
 // -------- Callback oficial de Google --------
 function googleTranslateElementInit() {
-  // Montamos el widget (necesario para que Google traduzca)
   new google.translate.TranslateElement(
     {
       pageLanguage: 'es',
-      includedLanguages: 'es,en',   // permite ir y volver sin recarga
+      includedLanguages: 'es,en',
       layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
       autoDisplay: false
     },
     'google_translate_element'
   );
 
-  // Una vez listo el DOM, conectamos eventos
   const tryWire = () => {
     ensureNavItems();
     updateFlag();
@@ -113,7 +168,8 @@ function googleTranslateElementInit() {
         e.preventDefault();
         const current = currentLangFromCookie();
         const next = (current === 'en') ? 'es' : 'en';
-        // 1) Intento directo con combo
+
+        // 1) Intento directo con el combo
         if (!changeViaCombo(next)) {
           // 2) Fallback robusto
           setCookieAndReload(next);
@@ -122,7 +178,6 @@ function googleTranslateElementInit() {
     }
   };
 
-  // Espera a que Google inyecte el combo y conéctalo
   let tries = 0;
   const t = setInterval(() => {
     tries++;
@@ -136,7 +191,7 @@ function googleTranslateElementInit() {
 // Exponer callback global
 window.googleTranslateElementInit = googleTranslateElementInit;
 
-// Primer pintado de navbar (por si el callback tarda)
+// Primer pintado de navbar
 document.addEventListener('DOMContentLoaded', () => {
   ensureNavItems();
   updateFlag();

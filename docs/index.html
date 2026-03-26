@@ -110,33 +110,87 @@ https://badge.dimensions.ai/
 
 /* Oculta la barra superior */
 
-.goog-te-banner-frame.skiptranslate { display: none !important; }
+.goog-te-banner-frame.skiptranslate { 
 
-body { top: 0 !important; }
+  display: none !important; 
+
+}
+
+body { 
+
+  top: 0 !important; 
+
+}
 
 
 
 /* Evita saltos por iframes */
 
-html body .skiptranslate > iframe { visibility: hidden !important; }
+html body .skiptranslate > iframe { 
+
+  visibility: hidden !important; 
+
+}
 
 
 
 /* Contenedor del widget: lo queremos en DOM pero discreto */
 
-.gtrans-slot { width: 0; height: 0; overflow: hidden; }
+.gtrans-slot { 
+
+  width: 0; 
+
+  height: 0; 
+
+  overflow: hidden; 
+
+}
 
 
 
 /* Botón-bandera */
 
-.nav-item.gtrans-flag { display: flex; align-items: center; }
+.nav-item.gtrans-flag { 
+
+  display: flex; 
+
+  align-items: center; 
+
+}
+
+
 
 .nav-item.gtrans-flag a {
 
-  text-decoration: none; font-size: 1.1rem; line-height: 1;
+  text-decoration: none;
 
-  padding: 0 .4rem; cursor: pointer;
+  line-height: 1;
+
+  padding: 0 .4rem;
+
+  cursor: pointer;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+
+
+/* Imagen de bandera */
+
+.nav-item.gtrans-flag img {
+
+  width: 1.25rem;
+
+  height: auto;
+
+  display: block;
+
+  border-radius: 2px;
 
 }
 
@@ -145,6 +199,34 @@ html body .skiptranslate > iframe { visibility: hidden !important; }
 
 
 <script>
+
+// -------- Configuración de banderas --------
+
+const FLAG_ASSETS = {
+
+  es: {
+
+    src: "/files/icons/flag-cl.svg",
+
+    alt: "Español (Chile)",
+
+    title: "Ver en español (Chile)"
+
+  },
+
+  en: {
+
+    src: "/files/icons/flag-gb.svg",
+
+    alt: "English (UK)",
+
+    title: "View in English"
+
+  }
+
+};
+
+
 
 // -------- Utilidades --------
 
@@ -162,6 +244,8 @@ function findRightNav() {
 
 }
 
+
+
 function currentLangFromCookie() {
 
   const m = document.cookie.match(/(?:^|;)\s*googtrans=([^;]+)/);
@@ -174,21 +258,39 @@ function currentLangFromCookie() {
 
 }
 
-function updateFlag() {
+
+
+function renderFlagButton(targetLang) {
 
   const a = document.getElementById('gtrans-flag-toggle');
 
   if (!a) return;
 
-  const lang = currentLangFromCookie();
 
-  // 🔽 Aquí cambiamos la bandera
 
-  a.textContent = (lang === 'en') ? '🇨🇱' : '🇬🇧';
+  const flag = FLAG_ASSETS[targetLang];
 
-  a.title = (lang === 'en') ? 'Ver en español (Chile)' : 'View in English';
+  a.innerHTML = `<img src="${flag.src}" alt="${flag.alt}" aria-hidden="true">`;
 
-  a.setAttribute('aria-label', a.title);
+  a.title = flag.title;
+
+  a.setAttribute('aria-label', flag.title);
+
+}
+
+
+
+function updateFlag() {
+
+  const current = currentLangFromCookie();
+
+
+
+  // Muestra la bandera del idioma al que cambiarás al hacer click
+
+  const next = (current === 'en') ? 'es' : 'en';
+
+  renderFlagButton(next);
 
 }
 
@@ -198,19 +300,27 @@ function setCookieAndReload(lang) {
 
   const val = `/auto/${lang}`;
 
-  const d = new Date(); d.setFullYear(d.getFullYear() + 1);
+  const d = new Date();
+
+  d.setFullYear(d.getFullYear() + 1);
+
+
 
   const base = `googtrans=${val}; expires=${d.toUTCString()}; path=/`;
 
   const host = location.hostname;
 
-  const root = '.' + host.replace(/^www\./,'');
+  const root = '.' + host.replace(/^www\./, '');
+
+
 
   document.cookie = base;
 
   document.cookie = `${base}; domain=${host}`;
 
   document.cookie = `${base}; domain=${root}`;
+
+
 
   location.reload();
 
@@ -228,7 +338,7 @@ function ensureNavItems() {
 
 
 
-  // Bandera
+  // Botón de bandera
 
   if (!document.getElementById('gtrans-flag-toggle')) {
 
@@ -236,7 +346,7 @@ function ensureNavItems() {
 
     li.className = 'nav-item gtrans-flag';
 
-    li.innerHTML = `<a id="gtrans-flag-toggle" title="Cambiar idioma">🌐</a>`;
+    li.innerHTML = `<a id="gtrans-flag-toggle" title="Cambiar idioma"></a>`;
 
     right.appendChild(li);
 
@@ -258,6 +368,10 @@ function ensureNavItems() {
 
   }
 
+
+
+  updateFlag();
+
   return true;
 
 }
@@ -272,7 +386,7 @@ function changeViaCombo(lang) {
 
   if (!combo) return false;
 
-  // IMPORTANTE: Google espera códigos en minúsculas tipo 'en'/'es'
+
 
   combo.value = lang;
 
@@ -290,15 +404,13 @@ function changeViaCombo(lang) {
 
 function googleTranslateElementInit() {
 
-  // Montamos el widget (necesario para que Google traduzca)
-
   new google.translate.TranslateElement(
 
     {
 
       pageLanguage: 'es',
 
-      includedLanguages: 'es,en',   // permite ir y volver sin recarga
+      includedLanguages: 'es,en',
 
       layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
 
@@ -311,8 +423,6 @@ function googleTranslateElementInit() {
   );
 
 
-
-  // Una vez listo el DOM, conectamos eventos
 
   const tryWire = () => {
 
@@ -336,7 +446,9 @@ function googleTranslateElementInit() {
 
         const next = (current === 'en') ? 'es' : 'en';
 
-        // 1) Intento directo con combo
+
+
+        // 1) Intento directo con el combo
 
         if (!changeViaCombo(next)) {
 
@@ -353,8 +465,6 @@ function googleTranslateElementInit() {
   };
 
 
-
-  // Espera a que Google inyecte el combo y conéctalo
 
   let tries = 0;
 
@@ -382,7 +492,7 @@ window.googleTranslateElementInit = googleTranslateElementInit;
 
 
 
-// Primer pintado de navbar (por si el callback tarda)
+// Primer pintado de navbar
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -399,7 +509,6 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- Carga la librería con callback -->
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 
 
 <link rel="stylesheet" href="styles.css">
@@ -515,8 +624,8 @@ Núcleo Milenio sobre Evolución del trabajo (M-New)</p><p></p>
   <div class="about-contents"><div id="hero-heading">
 <p>Mi nombre es Kevin Carrasco Quintanilla y soy Sociólogo y magíster en Ciencias Sociales de la Universidad de Chile. Mis intereses de investigación incluyen desigualdad, justicia distributiva, educación ciudadana, ciencia abierta y métodos cuantitativos de investigación social.</p>
 <p>Actualmente soy Investigador predoctoral en el Nucleo milenio sobre evolución del trabajo <a href="https://www.m-new.org/">(M-NEW)</a> y profesor de la cátedra “Métodos Estadísticos para las Ciencias Sociales III” de la Universidad Andrés Bello y del curso electivo “R para el análisis de datos sociales” de la Universidad Alberto Hurtado.</p>
-<p>Anteriormente fui Asistente de investigación de la línea «Interacciones Grupales e Individuales» de COES, Coordinador del Laboratorio de Investigación Social Abierta (LISA-COES), asistente de investigación del observatorio de cohesión social (ocs-coes), asistente de Investigación del proyecto FONDECYT “Educación y Meritocracia: Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile” y del proyecto FONDECYT “El proceso de trabajo en la ‘Economía GIG’: El caso de las plataformas de reparto en Chile y Argentina”.</p>
-<p>Nací y crecí en <a href="files/profile/champa.jpg">Champa</a>, Paine. Actualmente vivo en Santiago. Me gusta andar en bici, la música e ir a conciertos. Acá mi playlist de Spotify:</p>
+<p>Anteriormente fui Asistente de investigación de la línea «Interacciones Grupales e Individuales» de <a href="https://coes.cl/">COES</a>, Coordinador del Laboratorio de Investigación Social Abierta <a href="https://lisacoes.com/">(LISA-COES)</a>, asistente de investigación del observatorio de cohesión social <a href="https://ocs-coes.com/">(ocs-coes)</a>, asistente de Investigación del proyecto FONDECYT “Educación y Meritocracia: Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile” <a href="https://jc-castillo.com/proyectos/posts/fondecyt-edumer/">(EDUMER)</a>, del proyecto FONDECYT “El proceso de trabajo en la ‘Economía GIG’: El caso de las plataformas de reparto en Chile y Argentina” y del proyecto <a href="https://jc-castillo.com/proyectos/posts/fondecyt-ciudadania2/">FONDECYT</a> “Socialización política y educación para la ciudadanía - El rol de la familia y de la escuela”</p>
+<p>Nací y crecí en <a href="files/profile/champa.jpg">Champa</a>, Paine. Actualmente vivo en Santiago. Me gusta andar en bici, la música e ir a conciertos. Acá una de mis playlist de Spotify:</p>
 <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2jXSJ6D55LUNqtL6YkeZpr?utm_source=generator&amp;theme=0" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
 </iframe>
 </div></div>
