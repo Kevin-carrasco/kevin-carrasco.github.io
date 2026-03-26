@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" role="img" aria-labelledby="title desc">
+  <title id="title">Flag of the United Kingdom</title>
+  <desc id="desc">Union Jack with blue field, white diagonals and cross, and red diagonals and cross.</desc>
+  <clipPath id="t">
+    <path d="M0,0 v30 h60 v-30 z"></path>
+  </clipPath>
+  <path d="M0,0 v30 h60 v-30 z" fill="#012169"></path>
+  <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"></path>
+  <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"></path>
+  <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"></path>
+  <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"></path>
+</svg>

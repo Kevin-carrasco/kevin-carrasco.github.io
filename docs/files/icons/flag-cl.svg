@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Bandera de Chile</title>
+  <desc id="desc">Bandera de Chile con estrella blanca sobre cuadrado azul, franja blanca superior y franja roja inferior.</desc>
+  <rect width="900" height="600" fill="#d52b1e"></rect>
+  <rect width="900" height="300" fill="#ffffff"></rect>
+  <rect width="300" height="300" fill="#0039a6"></rect>
+  <polygon fill="#ffffff" points="150,65 170.572,128.357 237.56,128.357 183.494,167.536 204.066,230.893 150,191.714 95.934,230.893 116.506,167.536 62.44,128.357 129.428,128.357"></polygon>
+</svg>

@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - files/
 
 # Meta
 description-meta: "Kevin Carrasco - Sociólogo y Magíster en Ciencias sociales"
