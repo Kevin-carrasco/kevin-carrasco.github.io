@@ -2,7 +2,7 @@
 title: "Kevin Carrasco"
 subtitle: |
   Investigador Pre-doctoral \
-  [Núcleo Milenio sobre Evolución del trabajo (M-New)](https://www.m-new.org/https://www.m-new.org/our-team) \
+  [Núcleo Milenio sobre Evolución del trabajo (M-New)](https://www.m-new.org/our-team) \
   \
   Research Engineer \
   [VOLI-DiPLab](https://diplab.eu/members/)
