@@ -2,7 +2,7 @@
 title: "Kevin Carrasco"
 subtitle: |
   Investigador Pre-doctoral \
-  [Núcleo Milenio sobre Evolución del trabajo (M-New)](https://www.m-new.org/) \
+  [Núcleo Milenio sobre Evolución del trabajo (M-New)](https://www.m-new.org/https://www.m-new.org/our-team) \
   \
   Research Engineer \
   [VOLI-DiPLab](https://diplab.eu/members/)
@@ -46,7 +46,7 @@ Mi nombre es Kevin Carrasco Quintanilla y soy Sociólogo y magíster en Ciencias
 
 Actualmente soy Investigador predoctoral en el Nucleo milenio sobre evolución del trabajo [(M-NEW)](https://www.m-new.org/), ingeniero de investigación en el proyecto "Voices from Online Labour" [(VOLI)](https://diplab.eu/voli/) del grupo de investigación "Digital Platform Labor" [(DiPLab)](https://diplab.eu/) y profesor de la cátedra “Métodos Estadísticos para las Ciencias Sociales III” de la Universidad Andrés Bello y del curso electivo "R para el análisis de datos sociales" de la Universidad Alberto Hurtado.
 
-Anteriormente fui Asistente de investigación de la línea «Interacciones Grupales e Individuales» de [COES](https://coes.cl/), Coordinador del Laboratorio de Investigación Social Abierta [(LISA-COES)](https://lisacoes.com/), asistente de investigación del observatorio de cohesión social [(ocs-coes)](https://ocs-coes.com/), asistente de Investigación del proyecto FONDECYT "Educación y Meritocracia: Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile" [(EDUMER)](https://jc-castillo.com/proyectos/posts/fondecyt-edumer/), del proyecto FONDECYT "El proceso de trabajo en la 'Economía GIG': El caso de las plataformas de reparto en Chile y Argentina" y del proyecto [FONDECYT](https://jc-castillo.com/proyectos/posts/fondecyt-ciudadania2/) "Socialización política y educación para la ciudadanía - El rol de la familia y de la escuela"
+Anteriormente fui Asistente de investigación de la línea «Interacciones Grupales e Individuales» de [COES](https://coes.cl/), Coordinador del Laboratorio de Investigación Social Abierta [(LISA-COES)](https://lisacoes.com/), asistente de investigación del observatorio de cohesión social [(ocs-coes)](https://ocs-coes.com/), asistente de Investigación del proyecto FONDECYT "Educación y Meritocracia: Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile" [(EDUMER)](https://jc-castillo.com/proyectos/posts/fondecyt-edumer/), del proyecto FONDECYT "El proceso de trabajo en la 'Economía GIG': El caso de las plataformas de reparto en Chile y Argentina" y del proyecto FONDECYT "Socialización política y educación para la ciudadanía - El rol de la familia y de la escuela"
 
 Nací y crecí en [Champa](files/profile/champa.jpg), Paine. Actualmente vivo en Santiago. Me gusta andar en bici, la música e ir a conciertos. Acá una de mis playlist de Spotify:
 
