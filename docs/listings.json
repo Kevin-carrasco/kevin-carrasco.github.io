@@ -1,6 +1,10 @@
 [
   {
-    "listing": "/references/publications/index.html",
+    "listing": "/references/presentations/index.html",
+    "items": []
+  },
+  {
+    "listing": "/index.html",
     "items": [
       "/references/publications/posts/2026_Stability_and_Compar.html",
       "/references/publications/posts/2026_The_Conditioning_Pow.html",
@@ -15,11 +19,7 @@
     ]
   },
   {
-    "listing": "/references/presentations/index.html",
-    "items": []
-  },
-  {
-    "listing": "/index.html",
+    "listing": "/references/publications/index.html",
     "items": [
       "/references/publications/posts/2026_Stability_and_Compar.html",
       "/references/publications/posts/2026_The_Conditioning_Pow.html",
