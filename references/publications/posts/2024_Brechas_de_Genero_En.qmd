@@ -1,0 +1,23 @@
+---
+title : "Brechas de Genero En La Percepcion y Justificacion de La Desigualdad Salarial En Chile 1999-2019"
+date : "2024-04-01"
+author : "Castillo, Juan Carlos & Quintanilla, Kevin Carrasco"
+categories : ["Journal Article"]
+publication : "Estudios P'ublicos 1--41  [https://doi.org/10.38178/07183089/1152230428](https://doi.org/10.38178/07183089/1152230428)"
+publication_short : "Estudios P'ublicos 1--41  [https://doi.org/10.38178/07183089/1152230428](https://doi.org/10.38178/07183089/1152230428)"
+abstract : "Las brechas salariales entre hombres y mujeres son una de las principales expresiones econ'omicas de la desigualdad de g'enero. De acuerdo a datos de la OCDE, en promedio, en Chile los salarios de los hombres son un 12% m'as altos que los de las mujeres, llegando incluso a casi un 25% cuando se ajusta por horas trabajadas. Si bien existe una amplia documentaci'on de este tipo de brechas socioecon'omicas, es escasa la investigaci'on sobre si la desigualdad salarial entre hombres y mujeres es percibida y justificada en la poblaci'on, y mucho menos sobre los factores asociados a la percepci'on y justificaci'on de estas brechas. Utilizando datos de la encuesta del International Social Survey Programme --- ISSP (m'odulos desigualdad econ'omica 1999, 2009 y 2019, levantados por CEP en Chile), el presente art'iculo se centra en un an'alisis descriptivo de los cambios de percepci'on y justificaci'on de las brechas salariales por g'enero en los 'ultimos veinte a~nos. Los resultados indican que, si bien en Chile en promedio se percibe una alta desigualdad salarial, las mujeres perciben y justifican una menor desigualdad salarial consistentemente a trav'es del tiempo. Las implicancias de estos resultados en relaci'on con el impulso de cambios pol'iticos y culturales que permitan reducir la brecha de g'enero se aborda en las conclusiones."
+abstract_short : ""
+about:
+  template: marquee
+  links:
+    - icon: NA
+      href: NA
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Castillo, Juan Carlos & Quintanilla, Kevin Carrasco (2024). *Brechas de Genero En La Percepcion y Justificacion de La Desigualdad Salarial En Chile 1999-2019*. Estudios P'ublicos 1--41  [https://doi.org/10.38178/07183089/1152230428](https://doi.org/10.38178/07183089/1152230428)
+
+:::
+

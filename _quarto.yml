@@ -19,8 +19,12 @@ website:
     left:
 #      - text: Home
 #        href: index.qmd   
-      - text: Investigación  
-        href: publications.qmd                             
+      - text: "Investigación"
+        menu:
+          - text: "Publicaciones"
+            href: references/publications/index.qmd
+          - text: "Presentaciones"
+            href: references/presentations/index.qmd                           
       - text: Docencia
         href: teaching.qmd
 

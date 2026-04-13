@@ -38,6 +38,19 @@ about:
       href: https://www.researchgate.net/profile/Kevin-Carrasco-2
       target: _blank
 
+listing:
+- id: publications
+  contents: 
+    - references/publications/posts/*.qmd
+  sort: date desc
+  type: default
+  fields: [title, date, author]
+  max-items: 5
+  categories: false
+  sort-ui: false
+  feed: false
+  page-size: 500
+
 ---
 
 :::{#hero-heading}
@@ -54,7 +67,26 @@ Nací y crecí en [Champa](files/profile/champa.jpg), Paine. Actualmente vivo en
 
 :::
 
-## Últimos papers
+## Últimas publicaciones
 
-Revisa mis últimos &nbsp;[Papers](publications.qmd#category=papers)&nbsp; y [Capítulos de libros](publications.qmd#category=capitulos-de-libros) en la sección de [Investigación](publications.qmd).
+::: {.section-text}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: left;"}
+<br>
 
+::: {#references/publications}
+:::
+
+
+:::{#publications}
+:::
+
+::: {.button}
+[Todas las publicaciones](references/publications/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+:::
+
+:::
+:::
+:::
+:::

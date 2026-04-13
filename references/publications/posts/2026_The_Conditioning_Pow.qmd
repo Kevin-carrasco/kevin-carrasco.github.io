@@ -1,0 +1,23 @@
+---
+title : "The Conditioning Power of Class: Collective Action and Attitudes toward Inequality in Neoliberal Chile (2016--2023)"
+date : "2026-02-01"
+author : "Perez-Ahumada, Pablo; Olivares-Collio, Daniela & Carrasco, Kevin"
+categories : ["Journal Article"]
+publication : "Critical Sociology 08969205261417585  [https://doi.org/10.1177/08969205261417585](https://doi.org/10.1177/08969205261417585)"
+publication_short : "Critical Sociology 08969205261417585  [https://doi.org/10.1177/08969205261417585](https://doi.org/10.1177/08969205261417585)"
+abstract : "In an age of deepening inequality, most sociological research has examined how perceptions of injustice motivate collective action. This article reverses that perspective to explore how participation in collective action shapes attitudes toward income inequality---and how this process is shaped by class. Using nationally representative panel data from Chile (2016--2023), we analyze perceptions of fair pay gaps between top managers and unskilled workers. We show that individuals in subordinated class positions---for example, nonmanagerial workers---support significantly smaller pay gaps than those in privileged class locations. Moreover, while participation in protests is associated with more egalitarian attitudes overall, this effect persists over time only among nonmanagerial workers. Building on Marxist class analysis, we conceptualize this pattern as the conditioning power of class: class is not merely a structural location but a formative force that molds how collective action politicizes people. A causal mediation analysis indicates that, among nonmanagerial workers, protest participation nurtures egalitarian orientations partly by strengthening left-leaning political identities. By revealing how class shapes the transformative potential of collective action, this article contributes to research on inequality, class formation, and contentious politics in neoliberal economies."
+abstract_short : ""
+about:
+  template: marquee
+  links:
+    - icon: NA
+      href: NA
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Perez-Ahumada, Pablo; Olivares-Collio, Daniela & Carrasco, Kevin (2026). *The Conditioning Power of Class: Collective Action and Attitudes toward Inequality in Neoliberal Chile (2016--2023)*. Critical Sociology 08969205261417585  [https://doi.org/10.1177/08969205261417585](https://doi.org/10.1177/08969205261417585)
+
+:::
+

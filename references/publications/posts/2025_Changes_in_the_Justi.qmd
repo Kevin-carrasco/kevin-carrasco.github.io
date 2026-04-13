@@ -1,0 +1,23 @@
+---
+title : "Changes in the Justification of Educational Inequalities. the Role of Perceptions of Inequality and Meritocracy during the Covid Pandemic"
+date : "2025-09-01"
+author : "Castillo, Juan Carlos; Iturra, Julio & Carrasco, Kevin"
+categories : ["Journal Article"]
+publication : "Social Justice Research, 38(3) 240--263  [https://doi.org/10.1007/s11211-025-00458-0](https://doi.org/10.1007/s11211-025-00458-0)"
+publication_short : "Social Justice Research, 38(3) 240--263  [https://doi.org/10.1007/s11211-025-00458-0](https://doi.org/10.1007/s11211-025-00458-0)"
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+  links:
+    - icon: NA
+      href: NA
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Castillo, Juan Carlos; Iturra, Julio & Carrasco, Kevin (2025). *Changes in the Justification of Educational Inequalities. the Role of Perceptions of Inequality and Meritocracy during the Covid Pandemic*. Social Justice Research, 38(3) 240--263  [https://doi.org/10.1007/s11211-025-00458-0](https://doi.org/10.1007/s11211-025-00458-0)
+
+:::
+

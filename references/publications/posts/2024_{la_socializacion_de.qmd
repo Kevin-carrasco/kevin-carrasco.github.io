@@ -1,0 +1,23 @@
+---
+title : "{la socializacion de las actitudes hacia la desigualdad y meritocracia en la etapa escolar en chile}"
+date : "2024-01-01"
+author : "Carrasco, Kevin; Garcia-Castro, Juan Diego & Castillo, Juan Carlos"
+categories : ["Book Section"]
+publication : "  In Gonzalo Assusa & Gabriela Benza: {America Latina desigual. Preguntas, enfoques y tendencias actuales} 205--234 . ISBN: 978-607-03-1387-5"
+publication_short : "  In Gonzalo Assusa & Gabriela Benza: {America Latina desigual. Preguntas, enfoques y tendencias actuales} 205--234 . ISBN: 978-607-03-1387-5"
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+  links:
+    - icon: NA
+      href: NA
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Carrasco, Kevin; Garcia-Castro, Juan Diego & Castillo, Juan Carlos (2024). *{la socializacion de las actitudes hacia la desigualdad y meritocracia en la etapa escolar en chile}*.   In Gonzalo Assusa & Gabriela Benza: {America Latina desigual. Preguntas, enfoques y tendencias actuales} 205--234 . ISBN: 978-607-03-1387-5
+
+:::
+

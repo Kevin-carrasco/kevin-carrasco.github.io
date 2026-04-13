@@ -1,0 +1,23 @@
+---
+title : "The Political Participation of Latin American School-Age Students"
+date : "2025-03-01"
+author : "Miranda, Daniel; Castillo, Juan Carlos; Carrasco, Kevin & Herrera-Leighton, Anais"
+categories : ["Book Section"]
+publication : " The {{Political Psychology}} of {{Social Unrest}} in {{Latin America}} 104--122 . London: Routledge [https://doi.org/10.4324/9781003282174-6](https://doi.org/10.4324/9781003282174-6). ISBN: 978-1-003-28217-4"
+publication_short : " The {{Political Psychology}} of {{Social Unrest}} in {{Latin America}} 104--122 . London: Routledge [https://doi.org/10.4324/9781003282174-6](https://doi.org/10.4324/9781003282174-6). ISBN: 978-1-003-28217-4"
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+  links:
+    - icon: NA
+      href: NA
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Miranda, Daniel; Castillo, Juan Carlos; Carrasco, Kevin & Herrera-Leighton, Anais (2025). *The Political Participation of Latin American School-Age Students*.  The {{Political Psychology}} of {{Social Unrest}} in {{Latin America}} 104--122 . London: Routledge [https://doi.org/10.4324/9781003282174-6](https://doi.org/10.4324/9781003282174-6). ISBN: 978-1-003-28217-4
+
+:::
+

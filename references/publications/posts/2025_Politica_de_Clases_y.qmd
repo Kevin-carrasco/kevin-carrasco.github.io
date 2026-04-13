@@ -1,0 +1,23 @@
+---
+title : "Politica de Clases y Confianza En Los Sindicatos En America Latina"
+date : "2025-06-01"
+author : "Perez-Ahumada, Pablo & Carrasco, Kevin"
+categories : ["Journal Article"]
+publication : "Latin American Research Review, 60(2) 410--433  [https://doi.org/10.1017/lar.2024.64](https://doi.org/10.1017/lar.2024.64)"
+publication_short : "Latin American Research Review, 60(2) 410--433  [https://doi.org/10.1017/lar.2024.64](https://doi.org/10.1017/lar.2024.64)"
+abstract : "Resumen             En este art'iculo, estudiamos qu'e factores individuales y contextuales explican la confianza en los sindicatos latinoamericanos. Utilizando datos de Latinobar'ometro (2018--2020), mostramos que la confianza en los sindicatos es mayor entre personas de clase trabajadora y clase media asalariada, as'i como entre quienes se identifican con la izquierda y conf'ian m'as en las instituciones pol'iticas. A nivel contextual, la confianza es mayor en pa'ises neo-desarrollistas (por ejemplo, Brasil y Uruguay) y menor en pa'ises capitalistas tercerizados (por ejemplo, M'exico y pa'ises centroamericanos). Contrario a nuestra hip'otesis, tambi'en encontramos que la confianza en los sindicatos es alta en Chile (un pa'is liberal-rentista con sindicatos d'ebiles) y baja en algunos pa'ises redistributivo-rentistas (Venezuela) y neo-desarrollistas (Argentina). Para explicar estos resultados, analizamos c'omo la confianza en los sindicatos depende de aspectos contextuales como la informalidad laboral, el desempleo, la inflaci'on, el poder de los partidos de izquierda y el nivel de movilizaci'on social.           ,              Abstract             In this article, we investigate the individual and contextual factors that explain trust in Latin American labor unions. Utilizing data from Latinobar'ometro (2018--2020), we show that trust in unions is higher among working-class and salaried middle-class individuals, and among those who identify with the left and exhibit greater confidence in political institutions. On a contextual level, trust in unions is higher in neo-developmentalist countries (e.g., Brazil, Uruguay) and lower in outsourced capitalist nations (e.g., Mexico, Central American countries). Contrary to our initial hypothesis, we also find that trust in unions is high in Chile---a liberal-rentier country with weak unions---and low in some redistributive-rentier (e.g., Venezuela) and neo-developmentalist countries (e.g., Argentina). To explain these findings, we examine how trust in unions is influenced by contextual factors such as labor informality, unemployment, inflation, the strength of left-wing parties, and the country's level of social mobilization."
+abstract_short : ""
+about:
+  template: marquee
+  links:
+    - icon: NA
+      href: NA
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Perez-Ahumada, Pablo & Carrasco, Kevin (2025). *Politica de Clases y Confianza En Los Sindicatos En America Latina*. Latin American Research Review, 60(2) 410--433  [https://doi.org/10.1017/lar.2024.64](https://doi.org/10.1017/lar.2024.64)
+
+:::
+

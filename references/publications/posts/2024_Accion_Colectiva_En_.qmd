@@ -1,0 +1,23 @@
+---
+title : "Accion Colectiva En Plataformas Digitales de Reparto En America Latina"
+date : "2024-01-01"
+author : "Gutierrez-Crocco, Francisca; Ahumada, Pablo Perez; Carrasco, Kevin; Budnevich, Sebastian & Granadino, Dominique"
+categories : ["Report"]
+publication : "  Universidad Austral de Chile [https://doi.org/10.13140/RG.2.2.27618.50881](https://doi.org/10.13140/RG.2.2.27618.50881)"
+publication_short : "  Universidad Austral de Chile [https://doi.org/10.13140/RG.2.2.27618.50881](https://doi.org/10.13140/RG.2.2.27618.50881)"
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+  links:
+    - icon: NA
+      href: NA
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Gutierrez-Crocco, Francisca; Ahumada, Pablo Perez; Carrasco, Kevin; Budnevich, Sebastian & Granadino, Dominique (2024). *Accion Colectiva En Plataformas Digitales de Reparto En America Latina*.   Universidad Austral de Chile [https://doi.org/10.13140/RG.2.2.27618.50881](https://doi.org/10.13140/RG.2.2.27618.50881)
+
+:::
+
