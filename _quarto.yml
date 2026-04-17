@@ -16,6 +16,7 @@ website:
  
   navbar:
     background: dark
+    logo: /files/favicon/favicon.png
 
     left:
 #      - text: Home
@@ -53,13 +54,7 @@ website:
     right:  
        - icon: github
          href: https://github.com/kevin-carrasco/kevin-carrasco.github.io
-    #     target: _blank
-    #   - text: "{{< fa brands bluesky >}}" 
-    #     href: https://bsky.app/profile/hegang.bsky.social
-    #     target: _blank
-    #   - icon: rss
-    #     href: posts.xml
-    #     target: _blank  
+
   
   search:
     location: navbar
