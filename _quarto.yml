@@ -11,6 +11,7 @@ author-meta: "Kevin Carrasco"
 website:
   title: "Kevin Carrasco"
   image: "/files/profile/kevin-carrasco.jpg"
+  favicon: /files/favicon/favicon.ico
   description: "Kevin Carrasco es un sociólogo y magíster en Ciencias sociales. "
  
   navbar:
