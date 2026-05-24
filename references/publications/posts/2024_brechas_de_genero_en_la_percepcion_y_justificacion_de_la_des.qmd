@@ -1,7 +1,7 @@
 ---
 title: "Brechas de Género En La Percepción y Justificación de La Desigualdad Salarial En Chile 1999-2019"
 date: "2024-04-01"
-author: "Castillo, Juan Carlos & Quintanilla, Kevin Carrasco"
+author: "Castillo, Juan Carlos & Carrasco, Kevin"
 categories: ["Journal Article"]
 publication: "Estudios Públicos 1--41 [https://doi.org/10.38178/07183089/1152230428](https://doi.org/10.38178/07183089/1152230428)"
 publication_short: "Estudios Públicos 1--41 [https://doi.org/10.38178/07183089/1152230428](https://doi.org/10.38178/07183089/1152230428)"
@@ -14,7 +14,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Castillo, Juan Carlos & Quintanilla, Kevin Carrasco (2024). *Brechas de Género En La Percepción y Justificación de La Desigualdad Salarial En Chile 1999-2019*. Estudios Públicos 1--41 [https://doi.org/10.38178/07183089/1152230428](https://doi.org/10.38178/07183089/1152230428)
+Castillo, Juan Carlos & Carrasco, Kevin (2024). *Brechas de Género En La Percepción y Justificación de La Desigualdad Salarial En Chile 1999-2019*. Estudios Públicos 1--41 [https://doi.org/10.38178/07183089/1152230428](https://doi.org/10.38178/07183089/1152230428)
 
 :::
 

@@ -19,7 +19,7 @@ Enseño principalmente sobre estadística y R aplicado a las ciencias sociales. 
 
 - [Estadística IV](https://estadisticaiv.netlify.app/) - Sociología Universidad Alberto Hurtado
 
-- [Metodología I](https://metod1.netlify.app/) - Magíster en Ciencias Sociales Universidad de Chile
+- [Metodología I](https://metod1-mcs.netlify.app/) - Magíster en Ciencias Sociales Universidad de Chile
 
 - [Metodología cuantitativa avanzada](https://metod2-mcs.netlify.app/) - Magíster en Ciencias Sociales Universidad de Chile
 

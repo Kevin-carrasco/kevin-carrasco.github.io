@@ -3,9 +3,9 @@ title: "La socialización de las actitudes hacia la desigualdad y meritocracia e
 date: "2024-01-01"
 author: "Carrasco, Kevin; García-Castro, Juan Diego & Castillo, Juan Carlos"
 categories: ["Book Section"]
-publication: "In Gonzalo Assusa & Gabriela Benza: America Latina desigual. Preguntas, enfoques y tendencias actuales 205--234 . ISBN: 978-607-03-1387-5"
-publication_short: "In Gonzalo Assusa & Gabriela Benza: America Latina desigual. Preguntas, enfoques y tendencias actuales 205--234 . ISBN: 978-607-03-1387-5"
-abstract: "(Abstract not available)"
+publication: "America Latina desigual. Preguntas, enfoques y tendencias actuales 205--234 . ISBN: 978-607-03-1387-5"
+publication_short: "America Latina desigual. Preguntas, enfoques y tendencias actuales 205--234 . ISBN: 978-607-03-1387-5"
+abstract: "En la última década, una serie de investigaciones han generadoevidencia de las diferencias existentes entre las actitudes hacia ladesigualdad y la desigualdad objetiva (Osberg y Smeeding, 2006;Castillo, 2012a; García-Castro, García-Sánchez, et al., 2022). Laevaluación de la desigualdad se refiere al grado en que las perso-nas perciben la distribución desigual de riqueza, ingresos y otrosrecursos socioeconómicos dentro de una sociedad. Estas dife-rencias muchas veces se producen por acceso diferencial a infor-mación, pero también están asociadas a factores como valora-ciones, creencias y percepciones sobre la sociedad que podríanminimizar o aumentar los niveles de desigualdad económicapercibida. (PDF) La socialización de las actitudes hacia la desigualdad y meritocracia en la etapa escolar en Chile. Available from: https://www.researchgate.net/publication/385132484_La_socializacion_de_las_actitudes_hacia_la_desigualdad_y_meritocracia_en_la_etapa_escolar_en_Chile#fullTextFileContent ."
 abstract_short: ""
 about:
   template: marquee
@@ -14,7 +14,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Carrasco, Kevin; García-Castro, Juan Diego & Castillo, Juan Carlos (2024). *La socialización de las actitudes hacia la desigualdad y meritocracia en la etapa escolar en chile.*. In Gonzalo Assusa & Gabriela Benza: America Latina desigual. Preguntas, enfoques y tendencias actuales 205--234 . ISBN: 978-607-03-1387-5
+Carrasco, Kevin; García-Castro, Juan Diego & Castillo, Juan Carlos (2024). *La socialización de las actitudes hacia la desigualdad y meritocracia en la etapa escolar en chile.*. America Latina desigual. Preguntas, enfoques y tendencias actuales 205--234 . ISBN: 978-607-03-1387-5
 
 :::
 
