@@ -9,5 +9,5 @@ listing:
   fields: [title, date, author, categories]
   filter-ui: [categories, date]
   page-size: 1000
-title-block-banner: true
+title-block-banner: false
 ---
