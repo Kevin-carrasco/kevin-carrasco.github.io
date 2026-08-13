@@ -5,7 +5,7 @@ subtitle: |
   [Núcleo Milenio sobre Evolución del trabajo (M-New)](https://www.m-new.org/our-team) \
   \
   Research Engineer \
-  [VOLI-DiPLab](https://diplab.eu/members/)
+  [VOLI & SEED - DiPLab](https://diplab.eu/members/)
 description-meta: "Kevin Carrasco es Sociólogo y Magíster en Ciencias sociales. Es investigador pre-doctoral del Núcleo Milenio sobre Evolución del trabajo (M-New)."
 image: "files/profile/kevin-carrasco.jpg"
 page-navigation: false
