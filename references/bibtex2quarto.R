@@ -190,6 +190,11 @@ bibtex_2academic <- function(bibfile,
     mypubs$annotation <- gsub(" ---", "\n---\n", mypubs$annotation)
     
     mypubs$title      <- clean_bibtex_text(mypubs$title)
+
+mypubs$abstract <- stringr::str_replace_all(mypubs$abstract, stringr::fixed("$<$"), "<")
+mypubs$abstract <- stringr::str_replace_all(mypubs$abstract, stringr::fixed("$>$"), ">")
+mypubs$abstract <- clean_bibtex_text(mypubs$abstract)
+
     mypubs$abstract   <- clean_bibtex_text(mypubs$abstract)
     mypubs$mainref    <- clean_bibtex_text(mypubs$mainref)
     mypubs$annotation <- clean_bibtex_text(mypubs$annotation)
@@ -543,5 +548,5 @@ bibtex_2academic(bibfile  = my_bibfile,
 
 # Run this in R (within your website project folder): 
 
-# source("references/bibtex2quarto.R")
+ source("references/bibtex2quarto.R")
 
