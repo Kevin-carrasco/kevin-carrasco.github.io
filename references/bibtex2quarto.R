@@ -548,5 +548,5 @@ bibtex_2academic(bibfile  = my_bibfile,
 
 # Run this in R (within your website project folder): 
 
- source("references/bibtex2quarto.R")
+# source("references/bibtex2quarto.R")
 
